@@ -1,10 +1,10 @@
 {
-  "name": "node-http-server",
+  "name": "api-da-fabi",
   "version": "1.0.0",
-  "description": "Node.js example server starter project",
-  "main": "src/index.js",
+  "description": "",
+  "main": "api/index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon api/index.js"
   },
   "dependencies": {
     "express": "4.17.2",
