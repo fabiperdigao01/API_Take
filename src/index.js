@@ -12,7 +12,7 @@ app.get("/", async (req, res) => {
     })
     .then(function (data) {
       const len = data.items.length;
-      const ret = [];
+      const ret = {};
       for (let i = 0; i < 5 && i < len; i++) {
         ret["name_" + i] = data.items[i]["name"];
         ret["description_" + i] = data.items[i]["description"];
