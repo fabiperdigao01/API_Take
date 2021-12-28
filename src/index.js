@@ -13,8 +13,13 @@ app.get("/", async (req, res) => {
       return response.json();
     })
     .then(function (data) {
-      // SUA LOGICA PODE FICAR AQUI
-      res.send(data);
+      const len = data.items.length;
+      const ret = [];
+      for (let i = 0; i < 5 && i < len; i++) {
+        ret[i] = data.items[i];
+      }
+      console.log(ret);
+      res.send(ret);
     });
 });
 
