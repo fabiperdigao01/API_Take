@@ -4,8 +4,8 @@
   "description": "",
   "main": "api/index.js",
   "scripts": {
-    "start": "node api/index.js",
-    "start-dev": "nodemon api/index.js"
+    "start": "node src/index.js",
+    "start-dev": "nodemon src/index.js"
   },
   "dependencies": {
     "express": "4.17.2",
