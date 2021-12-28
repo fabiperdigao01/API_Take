@@ -14,7 +14,9 @@ app.get("/", async (req, res) => {
       const len = data.items.length;
       const ret = [];
       for (let i = 0; i < 5 && i < len; i++) {
-        ret[i] = data.items[i];
+        ret[i] = {};
+        ret[i]["name"] = data.items[i]["name"];
+        ret[i]["description"] = data.items[i]["description"];
       }
       console.log(ret);
       res.send(ret);
